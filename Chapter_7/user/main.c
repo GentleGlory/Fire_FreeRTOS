@@ -7,12 +7,12 @@ portCHAR flag2;
 extern List_t pxReadyTaskLists[ configMAX_PRIORITIES ];
 
 TaskHandle_t Task1_Handle;
-#define TASK1_STACK_SIZE    20
+#define TASK1_STACK_SIZE    32
 StackType_t Task1Stack[TASK1_STACK_SIZE];
 TCB_t Task1TCB;
 
 TaskHandle_t Task2_Handle;
-#define TASK2_STACK_SIZE    20
+#define TASK2_STACK_SIZE    32
 StackType_t Task2Stack[TASK2_STACK_SIZE];
 TCB_t Task2TCB;
 
