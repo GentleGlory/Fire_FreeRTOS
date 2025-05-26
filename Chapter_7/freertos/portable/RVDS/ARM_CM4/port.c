@@ -100,7 +100,7 @@ void xPortPendSVHandler( void )
         "stmdb r0!, {r4-r11} \n"
         "str r0, [r2] \n"
         "stmdb sp!, {r3, r14} \n"
-        "mov r0, #0 \n"
+        "mov r0, %0 \n"
         "msr basepri, r0 \n"
         "dsb \n"
         "isb \n"
@@ -115,8 +115,8 @@ void xPortPendSVHandler( void )
         "isb \n"
         "bx r14 \n"    
         "nop \n"
-				:
-				: "I"(configMAX_SYSCALL_INTERRUPT_PRIORITY)				
+        :
+        : "I"(configMAX_SYSCALL_INTERRUPT_PRIORITY)				
     );
 }
 
