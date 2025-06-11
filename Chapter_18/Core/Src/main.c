@@ -136,6 +136,10 @@ static void KEY_Task( void *parameter )
             printf("In KEY_Task, B1 Set\r\n");
             
             xReturn = osSemaphoreRelease( binarySemHandle );
+            if( xReturn == osOK )
+                printf("binarySemHandle released. \r\n");
+            else
+                printf("binarySemHandle release error:%d.\r\n",xReturn);
             
             if( eTaskGetState( led1TaskHandle ) == eSuspended )
             {
@@ -158,13 +162,7 @@ static void KEY_Task( void *parameter )
                     printf("send_data2 send. \r\n");
                 else
                     printf("send_data2 send failed.\r\n");
-            }
-            
-            
-            if( xReturn == osOK )
-                printf("binarySemHandle released. \r\n");
-            else
-                printf("binarySemHandle release error:%d.\r\n",xReturn);
+            }                       
         }
     
         osDelay(500);
