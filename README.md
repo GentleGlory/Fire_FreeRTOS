@@ -34,6 +34,7 @@ The repository is organized by chapters and exercise topics:
 * Chapter 18: Semaphores
 * Chapter 19: Mutexes
 * Chapter 20: Event Groups
+* Chapter 21: Timer
 
 Each section contains commented source code for clarity and learning purposes.
 
