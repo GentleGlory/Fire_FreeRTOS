@@ -1,0 +1,2 @@
+## Flag1 and Flag2 Do Not Show Correct Waveforms
+In the logic analyzer, the waveforms of `Flag1` and `Flag2` are not displayed correctly. After investigation, it was found that the Optimization setting in `Language/Code` Generation needs to be set to -O0.
