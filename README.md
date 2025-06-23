@@ -35,6 +35,9 @@ The repository is organized by chapters and exercise topics:
 * Chapter 19: Mutexes
 * Chapter 20: Event Groups
 * Chapter 21: Timer
+* Chapter 22: Task Notification
+* Chapter 23: Memory Management
+* Chapter 24: Interrupt
 
 Each section contains commented source code for clarity and learning purposes.
 
